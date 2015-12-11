@@ -40,7 +40,7 @@ lc_time <- Sys.getlocale("LC_TIME")
 Sys.setlocale("LC_TIME", "C")
 
 ## create png file with needed width and height
-png(file = "plot2.png", width=480, height=480)
+png(file = "plot2.png", width=480, height=480, bg = "transparent")
 
 ## Draw line
 with(graph_data, plot(datetime, Global_active_power, type = "l", 

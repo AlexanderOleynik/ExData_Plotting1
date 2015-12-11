@@ -32,7 +32,7 @@ graph_data <- DT[DT$Date == "1/2/2007" |
 
 
 ## Create png file with needed width and height
-png(file = "plot1.png", width=480, height=480)
+png(file = "plot1.png", width=480, height=480, bg = "transparent")
 
 ## Draw plot
 hist(graph_data, col = "red", xlab = "Global Active Power (kilowatts)", 

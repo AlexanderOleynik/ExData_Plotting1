@@ -41,7 +41,7 @@ lc_time <- Sys.getlocale("LC_TIME")
 Sys.setlocale("LC_TIME", "C")
 
 ## Create png file with needed width and height
-png(file = "plot3.png", width = 480, height = 480)
+png(file = "plot3.png", width = 480, height = 480, bg = "transparent")
 ## Draw axes
 with(
   graph_data, plot(
